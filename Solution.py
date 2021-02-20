@@ -81,7 +81,7 @@ nums = [p[1] for p in densities]
 avg = sum(nums) / len(nums) #acts as 0
 rng = max(  abs(max(nums)-avg), abs(min(nums)-avg)  )
 
-coeff = rng/10.5
+coeff = rng/10
 print(coeff)
 for P in densities:
     print("{} popularity from -10 -> 10: {}".format(P[0],(P[1]-avg)/coeff))
