@@ -63,7 +63,7 @@ for P in POIs:
 
 print('-----------------------------------------------------')
 
-#QUESTION 3.2: AVERAGE/STD DEV OF DISTANCE B/W POI AND REQUEST
+#QUESTION 3.2: RADIUS/DENSITY OF REQUEST
 densities = []
 for P in POIs:
     x = df[ df['closestPOI'] == P ]
@@ -86,3 +86,4 @@ print(coeff)
 for P in densities:
     print("{} popularity from -10 -> 10: {}".format(P[0],(P[1]-avg)/coeff))
 
+#SEE bonus.txt FOR DETAILS
